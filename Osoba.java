@@ -4,38 +4,16 @@ public class Osoba {
     private String email;
     private String kraj;
 
-
-
-
     public Osoba(String imię, String nazwisko, String email, String kraj){
         setImie(imię);
         setNazwisko(nazwisko);
         setEmail(email);
         setKraj(kraj);
-
     }
-
-    public String getImie(){
-        return this.imię;
-    }
-
-    public String getNazwisko(){
-        return this.nazwisko;
-    }
-
-    public String getEmail(){
-        return this.email;
-    }
-
-    public String getKraj(){
-        return this.kraj;
-    }
-
-
-
-    public void setImie(String imie){
-        if(!(imie.equals("") || imie == null)){
-            this.imię = imie;
+    
+    public void setImie(String imię){
+        if(!(imię.equals("") || imię == null)){
+            this.imię = imię;
         }
     }
 
@@ -56,6 +34,23 @@ public class Osoba {
             this.kraj = kraj;
         }
     }
+
+    public String getImię(){
+        return this.imię;
+    }
+
+    public String getNazwisko(){
+        return this.nazwisko;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public String getKraj(){
+        return this.kraj;
+    }
+
 
     public String toString(){
         return this.imię+" "+this.nazwisko+" - "+this.email+" - "+this.kraj;
